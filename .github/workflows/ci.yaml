@@ -29,4 +29,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: YOUR_DOCKERHUB_USERNAME/test-docker-repo:latest
+        tags: echo_something:0.1
