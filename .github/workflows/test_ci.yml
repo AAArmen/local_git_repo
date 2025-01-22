@@ -32,4 +32,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_URL }}/local_git_repo:latest
+          tags: hunterw0lf/local_git_repo:latest
