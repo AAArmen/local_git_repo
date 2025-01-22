@@ -27,11 +27,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # Step 4: Build and Push Docker Image
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ secrets.REPO_NAME }}:latest
-          #  ${{ secrets.REGISTRY_URL }}/${{ secrets.REPO_NAME }}:${{ github.sha }}
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        push: true
+        tags: ${{ secrets.DOCKER_URL }}/local_git_repo:latest
