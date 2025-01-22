@@ -33,5 +33,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/test_CI:latest
+            ${{ secrets.DOCKER_USERNAME }}/${{ secrets.REPO_NAME }}:latest
           #  ${{ secrets.REGISTRY_URL }}/${{ secrets.REPO_NAME }}:${{ github.sha }}
