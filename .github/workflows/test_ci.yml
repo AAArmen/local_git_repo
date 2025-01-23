@@ -30,6 +30,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: .
+      #    context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/aaa:latest
