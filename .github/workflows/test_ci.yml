@@ -23,7 +23,7 @@ jobs:
         uses: docker/login-action@v2
         with:
          #registry: ${{ secrets.DOCKER_URL }}  # e.g., index.docker.io for Docker Hub
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ secrets.DOCKER_USERMAIL }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # Step 4: Build and Push Docker Image
